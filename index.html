@@ -12,20 +12,31 @@ body {
     font-family: "Noto Sans TC", sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #1f2937;
-    background-color: #f5f7fa;
+    background-color: #f0f2f5;
 }
 
 /* =====================================
    頁首 Header
 ===================================== */
 header {
-    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
     color: #ffffff;
-    padding: 32px 0;
+    padding: 48px 0;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0 0 8px;
+}
+
+header p {
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 /* =====================================
@@ -40,41 +51,70 @@ nav {
 
 nav a {
     color: #e5e7eb;
-    padding: 14px 24px;
+    padding: 16px 28px;
     text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    font-weight: 600;
     border-radius: 6px;
-}
-
-nav a:hover {
-    background-color: #1e293b;
-    color: #ffffff;
+    margin: 0 4px;
 }
 
 /* =====================================
    主要內容區塊 Section
 ===================================== */
 section {
-    padding: 60px 32px;
+    padding: 64px 32px;
     max-width: 1000px;
     margin: 40px auto;
     background-color: #ffffff;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
 }
 
-section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-}
-
-/* 標題風格 */
 h2 {
     color: #1e3a8a;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.8rem;
     margin-bottom: 24px;
+    border-bottom: 2px solid #3b82f6;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+/* =====================================
+   個人頭像
+===================================== */
+.profile-img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 24px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* =====================================
+   列表美化
+===================================== */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+/* =====================================
+   靜態按鈕樣式（取消互動效果）
+===================================== */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* =====================================
@@ -82,23 +122,10 @@ h2 {
 ===================================== */
 footer {
     text-align: center;
-    padding: 24px;
+    padding: 32px 16px;
     background-color: #0f172a;
     color: #cbd5e1;
     font-size: 0.9rem;
-}
-
-/* =====================================
-   個人頭像
-===================================== */
-.profile-img {
-    width: 60%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 24px auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 </style>
 </head>
